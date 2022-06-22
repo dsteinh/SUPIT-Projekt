@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Novosti</title>
+    <link rel="stylesheet" href="..\style\nastavni_plan.css">
+    <link rel="icon" type="image/x-icon" href="..\img\Algebra-logo.png">
+</head>
+<body>
+    
+    
+    <datalist id="kolegiji"></datalist>
+    <div id="header">
+        <ol id="navbar">
+            <li><img src="..\img\Algebra-logo.png" alt="A-logo"></li>
+            <li><a href="Pocetna.html"><i class="fa fa-fw fa-home"></i>Početna</a></li>
+            <li><a href="O_nama.html"><i class="fa fa-comments-o"></i>O nama</a></li>
+            <li><a href="novosti.html"><i class="fa fa-info-circle"></i>Novosti</a></li>
+            <li><a href="nastavni_plan.html"><i class="fa fa-info-circle"></i>Nastavni plan</a></li>
+            <li><a href="#popup1"><i class="fa fa-envelope"></i>Kontakt</a></li>  
+        </ol>
+    </div>
+    <div id="main">
+        <div id="title">
+            <h1>Nastavni plan</h1>
+        </div>
+        <div id="container">
+            <div id="search">
+                <h2>Naziv kolegija:</h2>
+                <input name="cc-number" id="cc-number" list="kolegiji" placeholder="Započnite unos naziva kolegija...">
+            </div>
+            <div id="tables">
+                <table id="table">
+                    <tr>
+                        <th id="kolegij">Kolegij</th>
+                        <th>ECTS</th>
+                        <th>Sati</th>
+                        <th>P</th>
+                        <th>V</th>
+                        <th>Tip</th>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th id="ukupno">Ukupno</th>
+                        <td id="ects"></td>
+                        <td id="sati"></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                        <td ></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <form action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                <h2><i class="fa fa-envelope"></i>Kontaktirajte nas</h2>
+
+                <label for="fname">Puno ime:</label>
+                <input type="text" id="fname" name="name" class="text">
+            
+                <label for="email">Email:</label>
+                <input type="mail" id="email" name="email" class="text">
+                
+                <label for="vaznost">Važnost poruke:</label>
+                <select id="vaznost" name="importance" class="text">
+                  <option value="visoka">Visoka</option>
+                  <option value="niska">Niska</option>
+                </select>
+                <label for="poruka">Vaša poruka:</label>
+                <textarea id="poruka" name="message" rows="4" cols="50" required="required"></textarea>
+                <div id="newsl">
+                    <label for="newsletter">Primaj newsletter:</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="da">
+                </div>
+                <div id="buttons">
+                    <input type="submit" value="Pošalji">
+                    <a class="close" href="#">&times;</a>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <h1>Budi izvrstan u onome što voliš</h1>
+        <h1>ZAISKRI</h1>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../functionalities/autocomplete.js"></script>
+    <script src="../functionalities/subjects.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="..\style\navbar.css">
+    <link rel="stylesheet" href="..\style\kontakt.css">
+    <link rel="stylesheet" href="..\style\kontakt.css">
+
+</body>
+</html>

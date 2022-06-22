@@ -1,0 +1,196 @@
+#navbar-plus{
+    display: flex;
+    position: relative;
+    gap: 30px;
+    margin-left: auto;
+    padding-right: 80px;
+    animation: 2s cubic-bezier(0.34, 1.56, 0.64, 1) 0s 1 slideInFromRight;
+}
+
+#navbar-plus a{
+    color: orange;
+}
+
+@keyframes slideInFromRight {
+    0% {transform: translateX(100%);}
+}
+#img img{
+    width: 100%;
+    height: 360px;
+    padding-top: 70px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+@keyframes slideInFromTop {
+    0% {transform: translateY(-100%);}
+}
+#main h1{
+    font-family:"Stolzl Bold", Arial, sans-serif;
+    color:rgb(27, 27, 27);
+    border-bottom: 2px solid rgb(255, 205, 39);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+}
+@keyframes slideInFromDown {
+    0% {transform: translateY(50%);}
+}
+h2{
+    font-family: "Arial", sans-serif, Sans-serif;
+    color:rgb(137, 39, 78);
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+h2 i {
+    color:rgb(137, 39, 78);
+    margin-bottom: 50px;
+}
+.pisano{
+    background-color:rgba(199, 199, 199, 0.171);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+.pisano p{
+    font-family: 'Brush Script MT', cursive;
+    font-weight: lighter;
+    color:rgb(51, 51, 51);
+    width: 900px;;
+    font-size: 20px;
+    
+}
+.tiles{
+    display: flex;
+    gap: 10px;
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+} 
+.tile{
+border: 0px solid;
+padding: 10px;
+text-align: justify;
+border-radius: 5px;
+padding-bottom: 80px;
+background-color: rgb(255, 255, 255);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+width:400px;
+transition: transform .2s
+}
+.tile:hover{
+    transform: scale(1.1);
+    z-index: 0;
+}
+.tiles h3{
+   text-transform: uppercase;
+}  
+.tiles span{
+    color:rgb(70, 184, 255);
+ } 
+#o-nama-3 h3, h4{
+padding-bottom: 15px;
+border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+}
+.sponsor-tiles{
+
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    
+}
+.sponsor-tile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: bottom;
+    width: 350px;
+    height: 150px;
+    transition: transform .2s
+}
+.sponsor-tile:hover{
+    transform: scale(1.1);
+}
+.sponsor-tile h4{
+  text-align: justify;
+  text-transform: uppercase;
+ 
+}
+.sponsor-tiles img{
+    width: 250px;;
+    height: 100px;
+    object-fit: contain;
+}
+.kako-do-nas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+   
+}
+.kako-do-nas i{
+    color: rgb(70, 184, 255); 
+}
+.kako-tile{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: top;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 500px;
+    height: 520px;
+    padding: 10px;
+    background-color: white;
+}
+.kako-tile p{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: justify;
+    margin: 0;
+}
+#map{
+    background-image: url("..\\img\\kakoDoNas.jpg");
+    background-repeat: no-repeat;
+    padding:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#footer{
+    background-image: url("..\\img\\zaiskri-bg.jpg");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color:white;
+}
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px #000000;
+}

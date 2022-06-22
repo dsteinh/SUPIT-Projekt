@@ -1,0 +1,111 @@
+#img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#img img, h2{
+    width: 100%;
+    height: 360px;
+    padding-top: 70px;
+    object-fit:cover;
+    position: relative;
+    z-index: -1;
+    animation: 1s ease-out 0s 1 slideInFromTop;
+    object-position: 0 top;
+}
+#img h2{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    padding-left:150px;
+    width: 50%;
+    text-shadow: 1px 1px #000000;
+    
+}
+@keyframes slideInFromTop {
+    0% {transform: translateY(-100%);}
+}
+
+#main h1{
+    font-family:"Stolzl Bold", Arial, sans-serif;
+    color:rgb(27, 27, 27);
+    border-bottom: 2px solid rgb(255, 205, 39);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+}
+@keyframes slideInFromDown {
+    0% {transform: translateY(50%);}
+}
+#article{
+
+    margin: 50px 400px 50px 400px;
+}
+#article p{
+    text-align: justify;
+    line-height:1.5;
+    font-size: large;
+}
+#media{
+    display:flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 50px;
+}
+#imgs{
+    display:flex;
+    gap: 10px;
+}
+.img{
+    width: 250px;
+    height:100px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.699), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#imgs img{
+    width: 250px;
+    height:100px;
+    opacity: 0.7;
+    border-radius: 5px;
+    transition: 0.5s all ease-in-out;
+}
+#imgs img:hover{
+    scale: 1.5;
+    opacity: 1;
+}
+video{
+    width: 520px;
+    padding-bottom: 70px;
+}
+#footer{
+    background-image: url("..\\img\\zaiskri-bg.jpg");
+    width:100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+}
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color:white;
+}
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px #000000;
+}

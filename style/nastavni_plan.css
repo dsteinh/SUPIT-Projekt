@@ -1,0 +1,123 @@
+#main{
+    margin-bottom: -200px;
+}
+#main h1{
+    
+    font-family:"Stolzl Bold", Arial, sans-serif;
+    color:rgb(27, 27, 27);
+    border-bottom: 2px solid rgb(255, 205, 39);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+    
+
+}
+#title{
+    width: 100%;
+    height: 100px;
+    padding-top: 80px;
+    background-color: white;
+}
+@keyframes slideInFromDown {
+    0% {transform: translateY(50%);}
+}
+#tables{
+    visibility: hidden;
+
+}
+#container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    gap: 5%;
+    animation: 2s cubic-bezier(0.34, 1, 0.64, 1) 0s 1 slideInFromRight;
+
+}
+@keyframes slideInFromRight {
+    0% {transform: translateX(100%);}
+}
+button {
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(137, 39, 78);
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 80px;
+    height: 40px;
+    
+  }
+  
+button:hover {
+background-color: rgb(137, 39, 78);
+color: white;
+}
+#search{
+    display: flex;
+    flex-direction: column;
+}
+#search h2{
+   font-size: 1rem;
+}
+input{
+    width: 500px;
+    height: 30px;
+    font-size: 0.9rem;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+  }
+#tables{
+    max-height: 500px;
+    overflow-y:scroll;
+}
+  th, td {
+    
+    text-align: left;
+    padding: 0px;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+  }
+.naziv{
+    width: 500px;
+}
+#kolegij{
+    width: 300px;
+
+}
+#ukupno{ width: 480px;}
+#ects,#sati{
+    font-weight: bold;
+    color: rgb(137, 39, 78);
+}
+  
+  tr:nth-child(even) {background-color: #f2f2f2;}
+#footer{
+    background-image: url("..\\img\\zaiskri-bg.jpg");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+    
+}
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color:white;
+}
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px #000000;
+}

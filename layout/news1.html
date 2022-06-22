@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>O nama</title>
+        <link rel="stylesheet" href="..\style\news.css">
+        <link rel="icon" type="image/x-icon" href="..\img\Algebra-logo.png">
+    </head>
+    <body>
+        <div id="header">
+            <ol id="navbar">
+                <li><img src="..\img\Algebra-logo.png" alt="A-logo"></li>
+                <li><a href="Pocetna.html"><i class="fa fa-fw fa-home"></i>Početna</a></li>
+                <li><a href="O_nama.html"><i class="fa fa-comments-o"></i>O nama</a></li>
+                <li><a href="novosti.html"><i class="fa fa-info-circle"></i>Novosti</a></li>
+                <li><a href="nastavni_plan.html"><i class="fa fa-info-circle"></i>Nastavni plan</a></li>
+                <li><a href="novosti.html#popup1"><i class="fa fa-envelope"></i>Kontakt</a></li>
+            </ol>
+            
+        </div>
+        <div id="close">
+            <span class="close-cursor" onclick="closeModal()">&times;</span>
+        </div>
+        <div id="main">
+            <div id="img">
+                <img src="..\img\novost1.jpg" alt="novost1.jpg">
+                <h2>Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills Kazan 2019.</h2>
+            </div>
+            <h1>WorldSkills natjecanje - Kazan 2019.</h1>
+            <div id="article">
+                <p>Nakon godinu dana priprema za natjecanje WorldSkills
+                    Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                    cijelog svijeta, trud se itekako isplatio. Josip,
+                    student 3. godine preddiplomskog studija sistemskog
+                    inženjerstva osvojio je 12. mjesto u vještini IT
+                    Networks and System Administration te osvojio medalju
+                    izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                    mentorima koji su ga pripremali za ovo natjecanje –
+                    voditelju studija sistemskog inženjerstva Silviju
+                    Papiću, voditelju katedre za operacijske sustave –
+                    Vedranu Dakiću i asistentu na studiju sistemskog
+                    inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                    studentu 3.godine preddiplomskog studija programskog
+                    inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                    za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                    16.mjestu u vještini IT Software Solutions for Business.</p>
+                </div>
+                <div id="media">
+                    <div id="imgs">
+                        <div class="img">
+                            <img src="..\img\galerija1.jpg" alt="galerija1.jpg" 
+                            onclick="openModal();currentSlide(1)">
+                        </div>
+                        <div class="img">
+                            <img src="..\img\galerija2.jpg" alt="galerija2.jpg" 
+                            onclick="openModal();currentSlide(2)">
+                        </div>
+                    </div>
+                    
+                    <video controls>
+                        <source src="..\video\worldskills.mp4" type="video/mp4">
+                        Your browser does not support HTML video.
+                    </video>    
+                </div>
+                <div id="myLightbox" class="lightbox">
+                    <div class="lightbox-content">
+                        <div class="mySlides">
+                        <img src="..\img\galerija1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                        <img src="..\img\galerija2.jpg" style="width:100%">
+                        </div>
+                        
+                        
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+                        
+                    </div>
+
+                </div>
+            </div>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <form action="http://www.fulek.com/VUA/SUPIT/ContactUs">
+                        <h2><i class="fa fa-envelope"></i>Kontaktirajte nas</h2>
+        
+                        <label for="fname">Puno ime:</label>
+                        <input type="text" id="fname" name="name" class="text">
+                    
+                        <label for="email">Email:</label>
+                        <input type="mail" id="email" name="email" class="text">
+                        
+                        <label for="vaznost">Važnost poruke:</label>
+                        <select id="vaznost" name="importance" class="text">
+                          <option value="visoka">Visoka</option>
+                          <option value="niska">Niska</option>
+                        </select>
+                        <label for="poruka">Vaša poruka:</label>
+                        <textarea id="poruka" name="message" rows="4" cols="50" required="required"></textarea>
+                        <div id="newsl">
+                            <label for="newsletter">Primaj newsletter:</label>
+                            <input type="checkbox" id="newsletter" name="newsletter" value="da">
+                        </div>
+                        <div id="buttons">
+                            <input type="submit" value="Pošalji">
+                            <a class="close" href="#">&times;</a>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <h1>Budi izvrstan u onome što voliš</h1>
+                <h1>ZAISKRI</h1>
+            </div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="..\style\\navbar.css">
+            <link rel="stylesheet" href="..\style\\lightbox.css">
+            <script src="../functionalities/lightbox.js"></script>
+            <link rel="stylesheet" href="..\style\kontakt.css">
+
+            
+        </body>
+</html>

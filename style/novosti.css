@@ -1,0 +1,110 @@
+#main{
+    margin-bottom: -200px;
+}
+#main h1{
+    
+    font-family:"Stolzl Bold", Arial, sans-serif;
+    color:rgb(27, 27, 27);
+    border-bottom: 2px solid rgb(255, 205, 39);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+    animation: 1s ease-out 0s 1 slideInFromDown;
+    
+
+}
+#title{
+    width: 100%;
+    height: 100px;
+    padding-top: 80px;
+    background-color: white;
+}
+@keyframes slideInFromDown {
+    0% {transform: translateY(50%);}
+}
+
+.tiles{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(245, 241, 241);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    
+
+    
+} 
+.tile{
+border: 20px solid rgb(245, 241, 241);
+text-align: center;
+border-radius: 100%;
+background-color: rgb(212, 212, 212);
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+transition: transform .2s;
+width: 300px;
+height: 300px;
+background-color: rgb(245, 241, 241);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin-bottom: 160px;
+cursor: pointer;
+}
+.tile:hover{
+    transform: scale(1.1);
+    z-index: 0;
+}
+.tile:nth-child(1){
+    background-image: url("..\\img\\novost1.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.tile:nth-child(2){
+    background-image: url("..\\img\\novost2.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.tile:nth-child(3){
+    background-image: url("..\\img\\novost3.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.tile h4{
+    margin:0;
+    color: yellow;
+    text-shadow: 1px 1px #000000;
+}
+.tile p{
+    margin:0;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    text-shadow: 1px 1px #000000;
+}
+#footer{
+    background-image: url("..\\img\\zaiskri-bg.jpg");
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+    
+}
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color:white;
+}
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px #000000;
+}
